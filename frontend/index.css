@@ -3,6 +3,11 @@ body {
   margin: 2% 10%;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -33,4 +38,8 @@ button:hover {
   padding: 10px;
   width: 800px;
   min-height: 400px;
+}
+
+.logo {
+  width: 50px;
 }
