@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(express.static('frontend'));
 
 //routes
-require('./routes/authRoutes')(app);
+require('./routes')(app);
 
 //dynamic port binding
 const PORT = process.env.PORT || 5555;
