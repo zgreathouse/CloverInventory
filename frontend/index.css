@@ -1,0 +1,36 @@
+body {
+  max-width: 1200px;
+  margin: 2% 10%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #63666A;
+}
+
+button {
+  width: 400px;
+  height: 30px;
+  color: #fff;
+  background-color: #43B02A;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.inventory {
+  border: 1px solid #63666A;
+  color: #63666A;
+  margin: 20px 0;
+  padding: 10px;
+  width: 800px;
+  min-height: 400px;
+}
