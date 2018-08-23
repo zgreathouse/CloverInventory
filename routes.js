@@ -21,7 +21,6 @@ module.exports = app => {
   app.get('/api/inventory', (req, res) => {
     const url = `https://apisandbox.dev.clover.com/v3/merchants/${keys.MERCHANT_ID}/items?access_token=${keys.ACCESS_TOKEN}`;
     axios.get(url).then(response => {
-      console.log();
       res.send(response.data);
     }).catch(err => {
       res.send({err})
