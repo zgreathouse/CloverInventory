@@ -16,6 +16,7 @@ const getInventory = () => {
       });
       document.getElementById('output').innerHTML = output;
     }).catch(err => {
+      console.log("Fetching inventory was unsuccessful :/");
       console.log(err);
     });
 }
