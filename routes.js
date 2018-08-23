@@ -10,10 +10,7 @@ module.exports = app => {
       res.redirect(301,
         `https://sandbox.dev.clover.com/oauth/authorize?client_id=${keys.APP_ID}`);
     } else {
-      accessCode = req.query.code;
-      merchantID = req.query.merchant_id;
-      employeeID = req.query.employee_id;
-      requestAPIToken(req, res, accessCode);
+      requestAPIToken(req, res, req.query.code);
     }
   });
 
