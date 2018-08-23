@@ -16,34 +16,28 @@ section {
 
 h1 {
   color: #63666A;
+  letter-spacing: 1px;
+  margin-left: 10px;
 }
 
-button {
-  width: 200px;
-  height: 30px;
-  color: #fff;
-  background-color: #43B02A;
-  border: none;
-  border-radius: 5px;
+ul {
+  list-style: none;
+  border: 1px solid #63666A;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 450px;
 }
 
-button:hover {
-  cursor: pointer;
+li {
+  padding: 2px;
 }
 
 .logo {
   width: 50px;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .inventory {
-  border: 1px solid #63666A;
-  border-radius: 5px;
+  border-top: 1px solid #63666A;
   color: #63666A;
   padding: 10px;
   margin: 20px 0;

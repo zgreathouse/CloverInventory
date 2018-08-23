@@ -4,13 +4,13 @@ const getInventory = () => {
     .then(data => {
       let output = "";
 
-      data.elements.forEach(item => {
+      data.elements.reverse().forEach(item => {
         output += `
           <ul>
-            <li class="">ID: ${item.id}</li>
-            <li>Name: ${item.name}</li>
-            <li>Price: ${convertPrice(item.price)}</li>
-            <li>SKU: ${item.sku}</li>
+            <li><strong>ID:</strong> ${item.id}</li>
+            <li><strong>Name:</strong> ${item.name}</li>
+            <li><strong>Price:</strong> ${convertPrice(item.price)}</li>
+            <li><strong>SKU:</strong> ${item.sku}</li>
           </ul>
         `;
       });
