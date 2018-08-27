@@ -6,7 +6,7 @@ let accessCode = "";
 module.exports = app => {
   //OAuth route
   app.get('/', (req, res) => {
-    if(req.query.code === undefined) {
+    if(req.query.code === undefined ) {
       res.redirect(301,
         `https://sandbox.dev.clover.com/oauth/authorize?client_id=${keys.APP_ID}`);
     } else {
