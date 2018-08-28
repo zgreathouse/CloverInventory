@@ -8,7 +8,7 @@ module.exports = app => {
   app.get('/', (req, res) => {
     if(req.query.code === undefined ) {
       res.redirect(301,
-        `https://sandbox.dev.clover.com/oauth/authorize?client_id=${keys.APP_ID}`);
+        `https://sandbox.dev.clover.com/oauth/authorize?client_id=${keys.APP_ID}&merchant_id=${keys.MERCHANT_ID}`);
     } else {
       requestAPIToken(req, res, req.query.code);
     }
