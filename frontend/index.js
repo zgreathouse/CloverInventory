@@ -1,5 +1,5 @@
 const getInventory = () => {
-  fetch('http://localhost:5555/api/inventory')
+  fetch('http://localhost:5555/api/inventory/')
     .then(res => res.json())
     .then(data => {
       let output = "";
@@ -14,14 +14,12 @@ const getInventory = () => {
           </ul>
         `;
       });
-      document.getElementById('output').innerHTML = output;
+      document.getElementById('inventory-items').innerHTML = output;
     }).catch(err => {
       console.log("Fetching inventory was unsuccessful :/");
       console.log(err);
     });
 }
-
-getInventory();
 
 const convertPrice = price => {
   let newPrice = price.toString();
@@ -30,3 +28,5 @@ const convertPrice = price => {
 
   return `$${dollars}.${cents}`
 }
+
+getInventory();

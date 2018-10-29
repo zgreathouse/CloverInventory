@@ -36,7 +36,11 @@ li {
   width: 50px;
 }
 
-.inventory {
+.container {
+  display: flex;
+}
+
+.inventory, .orders {
   border-top: 1px solid #63666A;
   color: #63666A;
   padding: 10px;

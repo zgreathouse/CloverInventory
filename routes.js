@@ -1,3 +1,4 @@
+
 const axios = require('axios');
 const keys = require('./keys');
 
@@ -8,7 +9,7 @@ module.exports = app => {
   app.get('/', (req, res) => {
     if(req.query.code === undefined ) {
       res.redirect(301,
-        `https://sandbox.dev.clover.com/oauth/authorize?client_id=${keys.APP_ID}&merchant_id=${keys.MERCHANT_ID}`);
+        `https://sandbox.dev.clover.com/oauth/authorize?client_id=${keys.APP_ID}&merchant_id=${keys.MERCHANT_ID}$redirect_uri=http://localhost:5000`);
     } else {
       requestAPIToken(req, res, req.query.code);
     }
